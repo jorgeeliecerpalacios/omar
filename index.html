@@ -14,6 +14,8 @@
     <style> 
     
        *{
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
        }
        .header {
@@ -24,7 +26,10 @@
         margin: 0;
         font-family: Arial;
       }
-        
+       .card {
+           max-width: 100%;
+           contain: fluid;
+       }
        .card img {
         margin: 10px;            
         border-radius: 20px;
@@ -46,10 +51,15 @@
         .nav-link{
             font-family: 'Bebas Neue', cursive;  
         }
+        .div-container1 {
+            max-width: 100%;
+        }
         .column {
             display: grid;
-            grid-template-columns: repeat(4, minmax(100px, 1fr));
-            gap: 9px; 
+            grid-template-columns:repeat(3, minmax(100px, 1fr));
+           /* grid-template-columns: repeat(4, minmax(100px, 1fr));*/
+            gap: 9px;
+             
         }
         
         .column img {
@@ -137,6 +147,9 @@
         .footer-info {
             align-items: center center;
         }
+        .fa-brands {
+            
+        }
 
       
         
@@ -148,7 +161,7 @@
 
  
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" style="max-width: 100%;">
         <div class="container-fluid">
           <h1 class="navbar-brand" href="#">Dj Odilup</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -176,12 +189,12 @@
         </div>
       </nav>
     <section>
-        <div class="card" style="contain: fluid;">
+        <div class="card" style="">
          <!-- <h1 href="https://www.youtube.com/channel/UCrQx7QSwox4-xT4vBINjRyA" class="titulo1">Dj Odilup</h1> -->
             <img src="https://wololosound.com/wp-content/uploads/trade-news-dj-660x400@2x.jpg">
         </div>
     </section>
-        <section class="container1">
+        <div class="div-container1">
             <h3 class="p1" style="margin: 15px;">Albunes/Musica</h3>
             <div class="column">
                 <img class="img-column" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
@@ -190,7 +203,7 @@
                 <img class="img-column" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
                 <img class="img-column" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
             </div>
-        </section>
+        </div>
            <!-- calendario de presentaciones -->
         <div class="div-calendar1">
             <h3 class="h3-tittle-calendar">Calendario</h3>
