@@ -25,14 +25,18 @@
         font-family: Arial;
       }
         
-        .card img {
-            margin: 10px;            
-            border-radius: 20px;
-            top: 90px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 20px; 
+       .card img {
+        margin: 10px;            
+        border-radius: 20px;
+        top: 90px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px; 
             
+        }
+        .img-column {
+            width: 90%;
+
         }
     
         .navbar-brand {            
@@ -115,7 +119,24 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             
         }
+        .footer-div {
+            display: grid;
+            margin-block: 40px;
+            text-align: center;
+            background-position: center center;
+        }
 
+        .h1-footer {
+            font-family: 'Oswald', sans-serif;
+            background-color: blueviolet;
+            text-align: inherit;
+        }
+        .tex-create{
+            background-color: burlywood;
+        }
+        .footer-info {
+            align-items: center center;
+        }
 
       
         
@@ -163,11 +184,11 @@
         <section class="container1">
             <h3 class="p1" style="margin: 15px;">Albunes/Musica</h3>
             <div class="column">
-                <img style="width: 90%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
-                <img style="width: 90%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
-                <img style="width: 90%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
-                <img style="width: 90%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
-                <img style="width: 90%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
+                <img class="img-column" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
+                <img class="img-column" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
+                <img class="img-column" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
+                <img class="img-column" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
+                <img class="img-column" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP97q5FmaYTCyfxPHFxVDXvyrngR0XOrH96w&usqp=CAU">            
             </div>
         </section>
            <!-- calendario de presentaciones -->
@@ -246,37 +267,37 @@
         </div>
 
         <!-- star footer -->
-    <div class="container">
+    <div class="container-footer">
         <footer class="footer-info">
-            <div>
-                <h1>DJODILUP</h1>
+            <div class="footer-div">
+                <h1 class="h1-footer" style="height: 100px;">DJ ODILUP</h1>
                 <!-- centrar creador -->
-                <div class="">               
+                <div class="tex-create">               
                     <span class="text-muted">© 2021 create by ingenialo.com</span>
                 </div>
                 <!-- alineacion de iconos redes sociales -->
-              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3">
-                    <a class="text-muted" href="https://www.youtube.com/results?search_query=odilup">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </li>
-                <li class="ms-3">
-                    <a class="text-muted" href="https://www.instagram.com/odilupdj/">
-                        <i class="fa-brands fa-instagram-square"></i>
-                    </a>
-                </li>
-                <li class="ms-3">
-                    <a class="text-muted" href="https://www.facebook.com/omar.pulido.1232">
-                        <i class="fa-brands fa-facebook-square"></i>
-                    </a>
-                </li>
-                <li class="ms-3">
-                    <a class="text-muted" href="https://soundcloud.com/odilup/popular-tracks">
-                        <i class="fa-brands fa-soundcloud"></i>
-                    </a>
-                </li>
-              </ul>
+              <div class="column">
+                    <div class="" style="background-color: blue;">
+                        <a class="" href="https://www.youtube.com/results?search_query=odilup">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="" style="background-color: brown;">
+                        <a class="" href="https://www.instagram.com/odilupdj/">
+                            <i class="fa-brands fa-instagram-square"></i>
+                        </a>
+                    </div>
+                    <div class="" style="background-color: yellow;">
+                        <a class="" href="https://www.facebook.com/omar.pulido.1232">
+                            <i class="fa-brands fa-facebook-square"></i>
+                        </a>
+                    </div>
+                    <div class="" style="background-color: green;">
+                        <a class="" href="https://soundcloud.com/odilup/popular-tracks">
+                            <i class="fa-brands fa-soundcloud"></i>
+                        </a>
+                    </div>
+              </div>
             </div>
         </footer>
     </div>
